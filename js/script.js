@@ -21,28 +21,9 @@ function formatTime(totalSeconds) {
 }
 
 async function getSongs(folder) {
-    // currFolder = folder
-    // let a = await fetch(`/${folder}/`)
-    // let response = await a.text();
-
     currFolder = folder
     let a = await fetch(`${folder}/tracks.json`)
     songs = await a.json();
-
-    let div = document.createElement("div");
-    div.innerHTML = response;
-    let as = div.getElementsByTagName("a")
-
-    songs = [];
-    for (let index = 0; index < as.length; index++) {
-        const element = as[index];
-        let href = element.getAttribute("href") || "";
-        if (href && href.endsWith(".mp3")) {
-            let songName = element.textContent.trim();
-            songs.push(songName)
-        }
-
-    }
 
     // show all the songs in the playlist
     let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0]
