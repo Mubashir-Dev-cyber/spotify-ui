@@ -213,9 +213,9 @@ body {
 }
 
 .songList {
-    height: 490px;
+    max-height: calc(80vh - 130px);
     overflow: auto;
-    margin-bottom: 44px;
+    margin-bottom: 48px;
 }
 
 .hamburger {
@@ -269,7 +269,7 @@ body {
 
 .seekbar {
     position: absolute;
-    bottom: 0;
+    bottom: 3px;
     height: 5px;
     width: 97%;
     background: black;
@@ -366,6 +366,9 @@ body {
         z-index: 1;
         width: 372px;
         background-color: black;
+        height: 100vh;
+        position: fixed;
+        top: 0;
     }
 
     .left .close {
@@ -470,7 +473,7 @@ body {
         width: 100%;
     }
 
-    .header{
+    .header {
         padding: 7px;
     }
 
@@ -481,10 +484,17 @@ body {
     .buttons>* {
         margin: 0 6px;
     }
-    
-    .spotifyPlaylist h1{
+
+    .spotifyPlaylist h1 {
         padding: 4px;
     }
 
-    
+    .library {
+        height: 75vh;
+    }
+
+    .left {
+        width: 100vw;
+    }
+
 }
