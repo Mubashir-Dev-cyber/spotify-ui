@@ -470,6 +470,10 @@ body {
         width: 100%;
     }
 
+    .header{
+        padding: 7px;
+    }
+
     .header>* {
         padding: 2px;
     }
