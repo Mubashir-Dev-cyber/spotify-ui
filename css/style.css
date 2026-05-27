@@ -497,10 +497,10 @@ body {
         width: 100vw;
     }
 
-    .songList{
-         max-height: calc(80vh - 130px);
-    overflow: auto;
-    margin-bottom: 48px;
+    .songList {
+        max-height: calc(80vh - 130px);
+        overflow: auto;
+        margin-bottom: 48px;
     }
 
 }
