@@ -323,8 +323,8 @@ body {
 .volume .range input {
     cursor: pointer;
     accent-color: rgba(248, 122, 5, 0.884);
-    opacity: 0;
-    width: 0;
+    opacity: 1;
+    width: 80px;
     transition: all 0.3s ease;
 }
 
@@ -334,11 +334,6 @@ body {
     align-items: center;
 }
 
-
-.volume:hover .range input {
-    opacity: 1;
-    width: 80px;
-}
 
 .aboveBar {
     display: flex;
