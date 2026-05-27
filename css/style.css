@@ -121,7 +121,7 @@ body {
     margin: 30px;
     max-height: 70vh;
     overflow-y: auto;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
 }
 
 .card {
@@ -409,6 +409,7 @@ body {
         justify-content: center;
         max-height: unset;
         overflow-y: unset;
+        margin-bottom: 25vh;
     }
 
     .aboveBar {
